@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_light"
+    android:padding="40dp"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <!-- User Inputs -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:backgroundTint="#000000" />
+
+    <EditText
+        android:id="@+id/et_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Vehicle Number"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:backgroundTint="#000000" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee ID"
+        android:padding="15dp"
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:backgroundTint="#000000" />
+
+    <!-- QR & Info for Print -->
+    <LinearLayout
+        android:id="@+id/printLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/white"
+        android:padding="20dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtPlate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plate: "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/qr_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <!-- Generate & Print Buttons -->
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/GreenButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Generate QR Code"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnPrint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        style="@style/GreenButton" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_visitor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Visitor Name"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#090808"
+            android:textColorHint="#808080"
+            android:backgroundTint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_visitor_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date (e.g., 2025-04-16)"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#090808"
+            android:textColorHint="#808080"
+            android:backgroundTint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_visitor_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Purpose"
+            android:padding="14dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#090808"
+            android:textColorHint="#808080"
+            android:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_visitor_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/green_dark"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>

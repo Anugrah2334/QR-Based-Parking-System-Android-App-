@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base app theme -->
+    <style name="Base.Theme.QRParkingApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary branding color. -->
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/green_light</item>
+
+        <!-- Apply custom button style -->
+        <item name="android:buttonStyle">@style/GreenButton</item>
+    </style>
+
+    <style name="Theme.QRParkingApp" parent="Base.Theme.QRParkingApp" />
+
+    <!-- Custom green button style -->
+    <style name="GreenButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/green_primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

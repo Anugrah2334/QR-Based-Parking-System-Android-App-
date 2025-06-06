@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_light"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:background="@null"
+            android:layout_margin="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="314dp"
+            android:layout_height="322dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="200dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/img_3" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="180dp"
+            android:padding="12dp"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            style="@style/GreenButton"/>
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="341dp"
+            android:layout_height="73dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:padding="12dp"
+            android:text="Scan QR Code"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            style="@style/GreenButton"/>
+
+        <TextView
+            android:id="@+id/dailyRecordsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="No Records Found"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="#222222"
+            android:visibility="gone"
+            android:layout_below="@id/btn_scan"/>
+    </RelativeLayout>
+
+    <!-- Sidebar Navigation -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:itemTextAppearance="@style/NavigationMenuTextStyle"
+        app:itemIconTint="@color/green_dark"
+        app:itemTextColor="@color/green_dark"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/nav_header"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

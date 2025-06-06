@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home" android:title="HOME" android:icon="@drawable/ic_home" />
+    <item android:id="@+id/nav_register" android:title="Register Vehicle" android:icon="@drawable/ic_register" />
+    <item android:id="@+id/nav_daily" android:title="Daily Records" android:icon="@drawable/ic_list" />
+    <item android:id="@+id/nav_visitors" android:title="Visitor Records" android:icon="@drawable/ic_visitor" />
+    <item android:id="@+id/nav_export" android:title="Export Data (Excel/CSV)" android:icon="@drawable/ic_export" />
+</menu>

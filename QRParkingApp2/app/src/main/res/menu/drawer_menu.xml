@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="HOME"
+        android:textSize="20dp"
+        android:icon="@android:drawable/ic_menu_view"/>
+    <item
+        android:id="@+id/nav_register"
+        android:title="Register Vehicle"
+        android:icon="@android:drawable/ic_input_add"/>
+    <item
+        android:id="@+id/nav_daily"
+        android:title="Daily Records"
+        android:icon="@android:drawable/ic_menu_today"/>
+    <item
+        android:id="@+id/nav_visitor_form"
+        android:title="Visitors"
+        android:icon="@android:drawable/ic_menu_my_calendar"/>
+    <item
+        android:id="@+id/nav_visitor_detail"
+        android:title="Visitor Records"
+        android:icon="@android:drawable/ic_menu_my_calendar"/>
+    <item
+        android:id="@+id/nav_export"
+        android:title="Export Data (Excel/CSV)"
+        android:icon="@android:drawable/ic_menu_save"/>
+</menu>
